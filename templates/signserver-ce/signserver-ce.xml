@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>signserver-ce</Name>
+  <Repository>keyfactor/signserver-ce</Repository>
+  <Registry>https://hub.docker.com/r/keyfactor/signserver-ce/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/176804-support-signserver-ce-unofficial-app/</Support>
+  <Project>https://github.com/Keyfactor/signserver-ce</Project>
+  <Overview>SignServer CE: Open source, PKI-based signing software to sign code, documents, timestamps and more. Unofficial Community Application not endorsed or maintained by SignServer or KeyFactor. For additional details see the following URL: https://hub.docker.com/r/keyfactor/signserver-ce/</Overview>
+  <Category>Security: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/Keyfactor/signserver-ce/raw/main/.github/images/community-signserver-icon.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1728532022</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Path 1" Target="/mnt/persistent" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Port 1" Target="8009" Default="8009" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8009</Config>
+  <Config Name="Container Port 2" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Container Port 3" Target="8081" Default="8081" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8081</Config>
+  <Config Name="Container Port 4" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8082</Config>
+  <Config Name="Container Port 5" Target="8443" Default="8443" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
+  <Config Name="Container Variable 1" Target="JAVA_HOME" Default="/usr/lib/jvm/java-11-slim" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/usr/lib/jvm/java-11-slim</Config>
+  <Config Name="Container Variable 2" Target="LOG_LEVEL_APP" Default="INFO" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">INFO</Config>
+  <Config Name="Container Variable 3" Target="LOG_LEVEL_SERVER" Default="INFO" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">INFO</Config>
+  <Config Name="Container Variable 4" Target="LOG_LEVEL_SERVER_SUBSYSTEMS" Default="WARN" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">WARN</Config>
+  <Config Name="Container Variable 5" Target="LOG_STORAGE_LOCATION" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 6" Target="LOG_STORAGE_MAX_SIZE_MB" Default="256" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">256</Config>
+  <Config Name="Container Variable 7" Target="PROXY_AJP_BIND" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 8" Target="PROXY_HTTP_BIND" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 9" Target="LOG_AUDIT_TO_DB" Default="1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Container Variable 10" Target="APPSERVER_DEPLOYMENT_TIMEOUT" Default="300" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">300</Config>
+  <Config Name="Container Variable 11" Target="APPSERVER_USE_MANAGED_ID" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 12" Target="HTTPSERVER_HOSTNAME" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 13" Target="SMTP_DESTINATION" Default="localhost" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
+  <Config Name="Container Variable 14" Target="SMTP_DESTINATION_PORT" Default="25" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">25</Config>
+  <Config Name="Container Variable 15" Target="SMTP_FROM" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 16" Target="SMTP_TLS_ENABLED" Default="1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Container Variable 17" Target="SMTP_SSL_ENABLED" Default="1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Container Variable 18" Target="SMTP_USERNAME" Default="mail-client" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">mail-client</Config>
+  <Config Name="Container Variable 19" Target="SMTP_PASSWORD" Default="gotmail" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">gotmail</Config>
+  <Config Name="Container Variable 20" Target="ADMINWEB_ACCESS" Default="1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Container Variable 21" Target="OBSERVABLE_BIND" Default="127.0.0.1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
+  <Config Name="Container Variable 22" Target="METRICS_ENABLED" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 23" Target="TLS_SETUP_ENABLED" Default="1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Container Variable 24" Target="DATABASE_JDBC_URL" Default="jdbc:h2:/mnt/persistent/signserverdb" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">jdbc:h2:/mnt/persistent/signserverdb</Config>
+  <Config Name="Container Variable 25" Target="DATABASE_USER" Default="signserver" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">signserver</Config>
+  <Config Name="Container Variable 26" Target="DATABASE_PASSWORD" Default="signserver" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">signserver</Config>
+  <Config Name="Container Variable 27" Target="RUN_TIMEMONITOR" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 28" Target="APPSRV_HOME" Default="/opt/keyfactor/appserver" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/opt/keyfactor/appserver</Config>
+</Container>
